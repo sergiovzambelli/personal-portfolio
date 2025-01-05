@@ -1,5 +1,5 @@
 const header = {
-  homepage: '#',
+  homepage: 'https://www.sergiovzambelli.it',
   title: 'SVZ',
 }
 
@@ -58,4 +58,13 @@ const contact = {
   email: 'sergiovzambelli@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+const seo = {
+  title: "Sergio Vittorio Zambelli - Portfolio",
+  description: "A showcase of my skills, projects, and experience as a full-stack developer.",
+  applicationName: "Sergio Vittorio Zambelli - Portfolio",
+  author: "Sergio Vittorio Zambelli",
+  author_site: "https://www.sergiovzambelli.it",
+  url: "https://www.sergiovzambelli.it",
+};
+
+export { header, about, projects, skills, contact, seo }
