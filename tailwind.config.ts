@@ -8,9 +8,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "#23283e",
+        'bg-alt': "#2a2f4c",
+        fg: "#bdbddd",
+        'fg-alt': "#cdcdff",
+        primary: "#90a0d9",
+      },
+      lineHeight: {
+        tight: '1.2',
       },
     },
   },
