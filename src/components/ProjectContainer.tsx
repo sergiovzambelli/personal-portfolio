@@ -11,14 +11,14 @@ interface Project {
 }
 
 const ProjectContainer = ({ project }: { project: Project }) => (
-  <div className='p-8 mx-auto text-center shadow-2xl transition-transform duration-200 transform hover:translate-y-[-7px]'>
+  <div className='p-8 mx-auto text-center shadow-2xl flex flex-col justify-between transition-transform duration-200 transform hover:translate-y-[-7px]'>
     <h3 className='font-bold text-xl'>{project.name}</h3>
 
     <p className='mt-4'>{project.description}</p>
     {project.stack && (
       <ul className='flex flex-wrap justify-center my-5'>
         {project.stack.map((item) => (
-          <li key={uniqid()} className='m-2 text-base text-primary font-semibold'>
+          <li key={uniqid()} className='m-2 text-sm text-primary font-semibold'>
             {item}
           </li>
         ))}

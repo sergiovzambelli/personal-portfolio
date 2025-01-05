@@ -14,10 +14,6 @@ h1, h2, h3, h4 {
   @apply leading-[1.2] text-fg-alt;
 }
 
-h1 {
-  @apply text-6xl;
-}
-
 h2 {
   @apply text-3xl;
 }
@@ -40,10 +36,4 @@ a {
 
 button {
   @apply cursor-pointer;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    @apply text-sm;
-  }
 }

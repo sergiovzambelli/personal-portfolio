@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div id='top' className="font-poppins leading-6 text-fg bg-bg shadow-lg font-poppins">
+    <div id='top' className="font-poppins leading-6 text-fg bg-bg shadow-lg font-poppins p-8">
       <Header />
 
       <main>

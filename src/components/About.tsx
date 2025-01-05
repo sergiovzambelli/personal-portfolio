@@ -1,19 +1,19 @@
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
+// import GitHubIcon from '@mui/icons-material/GitHub'
+// import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { about } from '@/portfolio'
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, resume } = about
 
   return (
-    <div className="flex flex-col items-center mt-12 gap-4">
+    <div className="flex flex-col items-center mt-4 md:mt-12 gap-4">
       {name && (
-        <h1 className="font-bold">
+        <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl">
           Hi, I am <span className="text-primary">{name}.</span>
         </h1>
       )}
 
-      {role && <h2 className="mt-5 font-bold">{`A ${role}.`}</h2>}
+      {role && <h2 className="mt-2 md:mt-5 font-bold">{`A ${role}.`}</h2>}
       <p className="mt-6 max-w-xl">{description && description}</p>
 
       <div className="flex items-center justify-center mt-10">

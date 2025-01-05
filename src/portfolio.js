@@ -28,9 +28,17 @@ const projects = [
     name: 'Is it Christmas?',
     description:
       "Wondering if it’s Christmas? With just one click, you’ll get a quick and clear answer—no need to check calendars or count down the days. Simple, fun, and hassle-free!",
-    stack: ['TailwindCSS', 'Next.js', 'Redux', 'TypeScript'],
+    stack: ['TailwindCSS', 'Next.js', 'TypeScript'],
     sourceCode: 'https://github.com/sergiovzambelli/isitchristmas-site',
     livePreview: 'https://www.isitchristmas.it/',
+  },
+  {
+    name: 'My Portfolio',
+    description:
+      "A showcase of my skills, projects, and experience as a full-stack developer, reflecting my passion for creating impactful web applications.",
+    stack: ['TailwindCSS', 'Next.js', 'TypeScript'],
+    sourceCode: 'https://github.com/sergiovzambelli/personal_portfolio',
+    livePreview: '#',
   },
 ]
 
