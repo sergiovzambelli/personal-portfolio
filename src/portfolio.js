@@ -51,6 +51,8 @@ const skills = [
   'Next.js',
   'React',
   'Redux',
+  'Python',
+  'Java',
   'Git',
 ]
 
