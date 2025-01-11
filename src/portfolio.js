@@ -54,6 +54,7 @@ const skills = [
   'Python',
   'Java',
   'Git',
+  'Cybersecurity',
 ]
 
 const contact = {
@@ -61,8 +62,8 @@ const contact = {
 }
 
 const seo = {
-  title: "Sergio Vittorio Zambelli - Portfolio",
-  description: "A showcase of my skills, projects, and experience as a full-stack developer.",
+  title: "Sergio Vittorio Zambelli - Full Stack Developer Portfolio",
+  description: "Explore the portfolio of Sergio Vittorio Zambelli, a passionate Full Stack Developer and Cybersecurity Master's student. View my innovative web development projects and freelance expertise.",
   applicationName: "Sergio Vittorio Zambelli - Portfolio",
   author: "Sergio Vittorio Zambelli",
   author_site: "https://www.sergiovzambelli.it",
