@@ -11,7 +11,7 @@ interface Project {
 }
 
 const ProjectContainer = ({ project }: { project: Project }) => (
-  <div className='p-8 mx-auto text-center shadow-2xl flex flex-col justify-between transition-transform duration-200 transform hover:translate-y-[-7px]'>
+  <div className='p-8 mx-auto text-center border-4 border-bg-alt rounded-xl flex flex-col justify-between transition-transform duration-200 transform hover:translate-y-[-7px]'>
     <h3 className='font-bold text-xl'>{project.name}</h3>
 
     <p className='mt-4'>{project.description}</p>
