@@ -19,7 +19,7 @@ const About = () => {
       <div className="flex items-center justify-center mt-10">
         {resume && (
           <a href={resume}>
-            <span className="text-base btn btn-outline px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-bg transition">
+            <span className="text-base px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-bg transition">
               resume
             </span>
           </a>
