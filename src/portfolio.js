@@ -37,9 +37,17 @@ const projects = [
     description:
       "A showcase of my skills, projects, and experience as a full-stack developer, reflecting my passion for creating impactful web applications.",
     stack: ['TailwindCSS', 'Next.js', 'TypeScript'],
-    sourceCode: 'https://github.com/sergiovzambelli/personal_portfolio',
+    sourceCode: 'https://github.com/sergiovzambelli/personal-portfolio',
     livePreview: '#',
   },
+  {
+    name: 'Photography Portfolio',
+    description:
+      "A responsive one-page portfolio showcasing beautiful photography. This is a low-budget project created with efficiency in mind.",
+    stack: ['TailwindCSS', 'Next.js', 'TypeScript'],
+    sourceCode: 'https://github.com/sergiovzambelli/photography-website',  // Aggiorna con il link del tuo repository
+    livePreview: 'https://photography-website-amber.vercel.app/',  // Aggiorna con il link della tua live preview
+  }
 ]
 
 const skills = [
