@@ -2,38 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply p-0 m-0 border-0 outline-none bg-inherit text-inherit shadow-none box-border font-poppins;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-html {
-  @apply scroll-smooth;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-h1, h2, h3, h4 {
-  @apply leading-[1.2] text-fg-alt;
+::-webkit-scrollbar-track {
+  @apply bg-surface;
 }
 
-h2 {
-  @apply text-3xl;
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded hover:bg-white/20;
 }
 
-h3 {
-  @apply text-xl;
-}
-
-h4 {
-  @apply text-lg;
-}
-
-ul {
-  @apply list-none;
-}
-
-a {
-  @apply no-underline;
-}
-
-button {
-  @apply cursor-pointer;
+/* Terminal Selection */
+::selection {
+  @apply bg-primary/20 text-primary;
 }

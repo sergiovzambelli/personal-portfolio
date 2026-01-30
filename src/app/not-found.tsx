@@ -1,31 +1,26 @@
-import Footer from "@/components/Footer";
-import { header } from "@/portfolio";
+import Shell from "@/components/Shell";
+import Link from "next/link";
 
 export default function NotFound() {
-  const { homepage, title } = header;
-
   return (
-    <main className="font-poppins leading-6 text-fg bg-bg shadow-lg p-8 min-h-dvh flex flex-col justify-between">
-      <header className="flex items-center justify-between h-32 max-w-[1100px] w-[95%] mx-auto md:h-24">
-        <h3>
-          {homepage ? (
-            <a
-              href={homepage}
-              className="text-primary hover:underline font-bold text-2xl"
-            >
-              {title}
-            </a>
-          ) : (
-            title
-          )}
-        </h3>
-      </header>
-      <div className="flex flex-col items-center mt-4 md:mt-12 gap-4">
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          Nothing here
-        </h1>
+    <Shell>
+      <div className="flex flex-col items-center justify-center h-[60vh] text-center space-y-6 animate-in fade-in duration-500">
+        <h1 className="text-6xl font-bold text-accent font-mono">404</h1>
+        <div className="space-y-2">
+          <h2 className="text-xl font-bold text-foreground">RESOURCE_NOT_FOUND</h2>
+          <p className="text-muted text-sm font-mono">
+            Error: The requested object is outside the current scope or does not exist.
+          </p>
+        </div>
+        <div className="pt-8">
+          <Link
+            href="/"
+            className="px-6 py-3 border border-primary text-primary hover:bg-primary/10 transition-colors rounded font-mono"
+          >
+            $ return --home
+          </Link>
+        </div>
       </div>
-      <Footer />
-    </main>
+    </Shell>
   );
 }
