@@ -1,6 +1,22 @@
 import Shell from "@/components/Shell";
 import CaseFile from "@/components/CaseFile";
 import { projects } from "@/data/portfolio";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Case Studies | SVZ.SEC",
+    description:
+        "Casi studio e analisi di sicurezza: intrusion detection, GDPR threat modeling, security governance e ethical automation.",
+    alternates: {
+        canonical: "/cases",
+    },
+    openGraph: {
+        title: "Case Studies | SVZ.SEC",
+        description:
+            "Esplora le investigazioni e analisi di sicurezza di Sergio Vittorio Zambelli.",
+        url: "https://www.sergiovzambelli.it/cases",
+    },
+};
 
 export default function Cases() {
     return (

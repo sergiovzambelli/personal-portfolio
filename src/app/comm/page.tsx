@@ -2,6 +2,21 @@ import Shell from "@/components/Shell";
 import { contact } from "@/data/portfolio";
 import EmailIcon from "@mui/icons-material/Email";
 import LockIcon from "@mui/icons-material/Lock";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact | SVZ.SEC",
+    description:
+        "Contatta Sergio Vittorio Zambelli per collaborazioni, consulenze di sicurezza o opportunità professionali.",
+    alternates: {
+        canonical: "/comm",
+    },
+    openGraph: {
+        title: "Contact | SVZ.SEC",
+        description: "Canale di comunicazione sicuro per contattare SVZ.SEC.",
+        url: "https://www.sergiovzambelli.it/comm",
+    },
+};
 
 export default function Comm() {
     return (

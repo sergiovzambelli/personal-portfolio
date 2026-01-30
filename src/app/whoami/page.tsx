@@ -1,5 +1,21 @@
 import Shell from "@/components/Shell";
 import { about, skills } from "@/data/portfolio";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Who Am I | SVZ.SEC",
+    description:
+        "Scopri chi è Sergio Vittorio Zambelli: background, competenze e percorso dalla full-stack development alla cybersecurity.",
+    alternates: {
+        canonical: "/whoami",
+    },
+    openGraph: {
+        title: "Who Am I | SVZ.SEC",
+        description:
+            "Background e competenze di Sergio Vittorio Zambelli, Cybersecurity Analyst.",
+        url: "https://www.sergiovzambelli.it/whoami",
+    },
+};
 
 export default function WhoAmI() {
     return (

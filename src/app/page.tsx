@@ -1,6 +1,67 @@
 import Shell from "@/components/Shell";
 import { header } from "@/data/portfolio";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+const siteUrl = "https://www.sergiovzambelli.it";
+
+export const metadata: Metadata = {
+  title: "SVZ.SEC | Cybersecurity Analyst & Researcher",
+  description:
+    "Portfolio di Sergio Vittorio Zambelli. Specializzato in offensive security, vulnerability analysis e secure architecture. Full-stack developer in transizione verso la cybersecurity.",
+  keywords: [
+    "Cybersecurity",
+    "Penetration Testing",
+    "Security Analyst",
+    "Full Stack Developer",
+    "OWASP",
+    "Vulnerability Analysis",
+    "Ethical Hacking",
+    "Sergio Vittorio Zambelli",
+    "SVZ.SEC",
+  ],
+  authors: [{ name: "Sergio Vittorio Zambelli", url: siteUrl }],
+  creator: "Sergio Vittorio Zambelli",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    url: siteUrl,
+    siteName: "SVZ.SEC",
+    title: "SVZ.SEC | Cybersecurity Analyst & Researcher",
+    description:
+      "Portfolio di Sergio Vittorio Zambelli. Offensive security, vulnerability analysis e secure architecture.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "SVZ.SEC - Cybersecurity Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SVZ.SEC | Cybersecurity Analyst & Researcher",
+    description:
+      "Portfolio di Sergio Vittorio Zambelli. Offensive security, vulnerability analysis e secure architecture.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 export default function Home() {
   return (
